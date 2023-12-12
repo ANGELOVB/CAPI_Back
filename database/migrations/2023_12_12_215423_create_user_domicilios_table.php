@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('domicilio', 250);
             $table->integer('numero_exterior')->default(0);
             $table->string('colonia', 100);
-            $table->string('cp', 5);
+            $table->string('cp', 10);
             $table->string('ciudad', 100);
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();   
